@@ -4,38 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Webshop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
-    <h1>Welkom bij mijn Mini Webshop</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="checkout.html">Checkout</a>
-    </nav>
+    <div class="container header-container">
+      <img src="images/logo.svg" alt="Logo" class="logo">
+      <h1>Mini Webshop</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="products">
-      <div class="product">
-        <img src="images/product1.jpg" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>€10,00</p>
-        <button onclick="addToCart('Product 1', 10)">Toevoegen</button>
-      </div>
-      <div class="product">
-        <img src="images/product2.jpg" alt="Product 2">
-        <h3>Product 2</h3>
-        <p>€15,00</p>
-        <button onclick="addToCart('Product 2', 15)">Toevoegen</button>
-      </div>
-    </section>
+    <div class="container">
+      <section class="products">
+  <div class="product">
+    <img src="images/headphone.jpg" alt="Product 1">
+    <h3>Wireless Headphones</h3>
+    <p>€50,00</p>
+    <button onclick="addToCart('Wireless Headphones', 50)">Toevoegen</button>
+  </div>
+  <div class="product">
+    <img src="images/watch.jpg" alt="Product 2">
+    <h3>Smartwatch</h3>
+    <p>€80,00</p>
+    <button onclick="addToCart('Smartwatch', 80)">Toevoegen</button>
+  </div>
+  <div class="product">
+    <img src="images/backpack.jpg" alt="Product 3">
+    <h3>Backpack</h3>
+    <p>€35,00</p>
+    <button onclick="addToCart('Backpack', 35)">Toevoegen</button>
+  </div>
+  <div class="product">
+    <img src="images/mouse.jpg" alt="Product 4">
+    <h3>Wireless Mouse</h3>
+    <p>€25,00</p>
+    <button onclick="addToCart('Wireless Mouse', 25)">Toevoegen</button>
+  </div>
+</section>
+
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Anass Maliki</p>
+    <div class="container">
+      <p>&copy; 2025 Anass Maliki</p>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
